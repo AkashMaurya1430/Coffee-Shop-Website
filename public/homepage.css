@@ -121,10 +121,9 @@ a:hover{
     opacity: 70%;
     justify-content: center;
     font-size: 2.5rem;
-    font-family:"Marcellus SC";
+    font-family:"Alex Brush";
     font-weight: 600;
     color: #995d24;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
 .topic{
