@@ -1,0 +1,443 @@
+body{
+ overflow-x: hidden;
+ font-family: sans-serif;
+ scroll-behavior: smooth;
+}
+
+  
+.zoom {
+  animation: scale 40s linear infinite;
+}
+  
+.carousel-caption{
+    right: 9%;
+    bottom: 28%;
+    left: 44%;
+}
+
+@keyframes scale {
+  50% {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+  }
+}
+
+
+.navbar{
+    position: fixed;
+    background: transparent;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 1000;
+    transition: 0.4s;
+}
+
+/* .nav-colored{
+    background-color: black;
+} */
+
+ .navbar-brand{
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Bad Script";
+}
+.navbar-brand:hover{
+    color: white;
+} 
+
+.navItems{
+    font-size: 1.4rem;
+    color: white;
+    font-family: "Marcellus";
+}
+
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+.underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: -5px;
+    background: rgb(255, 255, 255);
+    height: 2px;
+    transition-property: left right;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  right: 0;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.scrollTop{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #995d24;
+    border-color: #995d24;
+    transition: 0.1s;
+    outline: none;
+}
+
+.scrollTop:hover{
+    color: white;
+    background-color: #995d24;
+}
+
+.coffeeImg{
+    width: 200px;
+    height:200px;
+}
+
+.aboutUsContent{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+    color: rgb(110, 107, 107);
+}
+
+.count{
+    opacity: 70%;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family:"Marcellus SC";
+    font-weight: 600;
+    color: #995d24;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.topic{
+    margin-top: 5px;
+    justify-content: center;
+    font-size: 1.2rem;
+    /* letter-spacing: 1px; */
+    text-transform: uppercase;
+}
+
+.desc{
+    font-size: 0.9rem;
+    text-align: center; 
+    font-weight: 400;  
+    color: #995d24;
+}
+
+.header{    
+    height: 25rem;
+    width: 100%;
+}
+
+.headerImg{
+    width: 100%;
+    height: 100%;
+}
+
+.headerText{
+    position: relative;
+    top: -60%;
+    left: 40%;
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    font-family: "marcellus";
+}
+
+.teamImage{
+    height: 300px;
+    width: 300px;
+}
+
+.people{
+    margin-top: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.post{
+    font-size: 1.2rem;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    opacity: 90%;
+}
+
+.icons{
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: grey;
+}
+
+.recentPostHeader{
+    text-align: center;
+    color: #2F2F2F;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 700;
+    padding: 15px 20px;
+    position: relative;
+    text-transform: uppercase;
+    background-color: #ececec;
+}
+
+.recentPostHeader::before{
+    content: "";
+    width: 25px;
+    background-color: #995d24;
+    position: relative;
+    height: 1px;
+    margin-right: 0;
+    top: -5px;
+    display: inline-block;
+
+}
+
+.recentPostBody{
+    border: 1.5px solid #e3e3e3;
+    border-top: 0;
+    padding: 0 1rem;
+}
+
+.posts:last-child{
+    border-bottom: 0;
+}
+
+.posts{
+    height: 120px;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    padding: 1rem 0;
+}
+
+.postImg{
+    height: 100%;
+    width: 30%;
+}
+
+.postImg img{
+    width: 100%;
+    height: 80%;
+}
+
+.postContent{
+    width: 70%;
+    padding-left: 1rem;
+    transition: 0.3s;
+}
+
+.posts:hover .postContent{
+    color: #c78241;
+}
+
+.postTitle{
+    height: 60%;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.postData{
+    height: 40%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(90, 88, 88);
+}
+
+.service{
+    padding: 1rem 0.6rem;
+}
+
+.service:hover .IconDivBackground{
+    /* position: absolute; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    -webkit-transition: all 0.4s ease-in-out;
+    background-color: #995d24;
+    color: white;
+}
+
+.service:hover .IconDiv{
+    background-color: #995d24;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.serviceIcon{
+    justify-content: center;
+}
+
+
+.IconDiv{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;    
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: 1px 4px 8px -3px rgba(0,0,0,0.15);
+    color: #995d24;
+    font-weight: 300;
+}
+
+.serviceName{
+    justify-content: center;
+    font-weight: 550;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.serviceDesc{
+    text-align: center;    
+    color: rgb(114, 110, 110);
+    font-size: 0.9rem;
+}
+
+.ourProducts{
+    background-color: #b79777;;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 3px 14px 3px grey;
+    transition: 0.5s;
+}
+
+.cardName{
+    font-size: 1.2rem;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+.cardContent{
+    font-size: 1rem;
+    color: grey;
+}
+
+.viewProductsBtn{
+    border-radius: 10px;
+    background-color:orange;
+    padding: 0.5rem;
+    margin-top: 40px;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 550;
+    outline: none;
+}
+
+.viewProductsBtn:hover{
+    background-color: white;
+    color: black;
+}
+
+.ContactUs{
+    background-color: #091b27;
+    color: white;
+    padding: 2rem 4rem;
+}
+
+.contactHeading{
+    color: #A7753A;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contactHeading::before{
+    content: "";
+    width: 40px;
+    background-color: #995d24;
+    position: relative;
+    height: 1px;
+    margin-right: 0;
+    top: 15px;
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+.Footericons i{
+    font-weight: 500;
+    justify-content: center;
+    color: rgb(218, 214, 214);
+    padding: 0.4em;
+    border: 1px solid grey;
+}
+
+.Footericons i:hover{
+    transition: 0.4s;
+    background-color: white;
+    color: #995d24;
+}
+
+.ContactUs{
+    color: #d8d8d8;
+}
+
+.servicesBackground{
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    html{
+        overflow-x: hidden;
+    }
+    .recentPost{
+        display: none;
+    }
+    .servicesDiv{
+        padding: 1rem;
+    }
+
+    .ContactUs{
+        padding: 1rem;
+    }
+
+    .navbar-brand{
+        font-size: 2rem;
+    }
+
+    .servicesBackground img{
+        width: 100vh;
+        height: 100vh;
+    }
+
+    .headerText{
+        top: -65%;
+        left: 14%;
+    }
+
+    .ourTeamSection .headerText{
+        left: 9%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .scrollTop{
+        background-color: #995d24;
+    }
+}
