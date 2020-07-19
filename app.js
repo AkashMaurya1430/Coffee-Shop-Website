@@ -16,4 +16,8 @@ app.get('/', (req, res) => {
     res.render('homepage');
 });
 
-app.listen(3000);
+let port = (process.env.PORT || '3000')
+
+app.listen(port, process.env.IP, function () {
+    console.log("server is running");
+});
